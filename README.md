@@ -8,7 +8,7 @@ Establishing Scholarly Identity with the Online Research Contributor Identifier 
 If you're reading this on the github, repo, please see the rendered lesson at: 
 http://authorcarpentry.github.io/orcid-profile
 
-*Content Contributors: Tom Morrell, Kaylea Champion, Donna Wrublewski, Gail Clement*
+*Content Contributors: Gail Clement, Tom Morrell, Kaylea Champion, Donna Wrublewski*
 
 *Lesson Maintainers: Tom Morrell*
 

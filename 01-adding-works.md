@@ -1,6 +1,6 @@
 #  Adding Works to your ORCID profile
 
-60 Minutes
+25 Minutes
 
 ---
 
@@ -131,7 +131,7 @@ An upload prompt will display, so browse to your desktop and select the file 'Hu
 
 Save the uploaded file by clicking on the little green icon that looks like either an old-fashioned computer disk or a hotel bed.
 
-![___Figure 4c. Review BibTeX___](img/orcid16.png)
+![___Figure 4c. Review BibTeX___](img/orcid16_500.png)
 
 Hugh's abstract is now added to your ORCID profile as a test!
 

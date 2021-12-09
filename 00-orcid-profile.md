@@ -1,5 +1,5 @@
 #  Getting Started with ORCID
-25 Minutes
+15 Minutes
 
 ---
 
