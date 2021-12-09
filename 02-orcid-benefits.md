@@ -26,17 +26,17 @@ in option on the login screen and picking ORCID. Go to [MySciEnCV](https://www.n
 and, click the blue "Click Here to Start" button, and look for the 3rd party
 sign in link
 
-![3rd_party](img/3rd_party.png)
+![3rd party login option](img/3rd_party.png)
 
 Search for ORCID, and login. Sometimes you get redirected to the main NIH
 account page, SciENcv is in the bottom left. Click Create New Biosketch, give
 it a name, pick a format, and select ORCID as the data source.
 
-![source](img/source.png)
+![External source selection](img/source.png)
 
 You’ll be able to add works from your ORCID record to the Biosketch with just one click.
 
-![pick_ref](img/pick_ref.png)
+![Selecting references](img/pick_ref.png)
 
 
 Previous: [Adding Works](01-adding-works.html)
