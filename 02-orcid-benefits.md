@@ -20,10 +20,23 @@ As ORCID gains status as a global standard identifier for authors, an increasing
 
 ### Exercise
 
-For one of the systems listed above, register for a new account using your ORCID.  
+Let's create a NIH or NSF Biosketch in SciENcv. If you do not already have a NIH
+account, you can avoid creating a separate login by clicking the 3rd party sign
+in option on the login screen and picking ORCID. Go to [MySciEnCV](https://www.ncbi.nlm.nih.gov/sciencv/)
+and, click the blue "Click Here to Start" button, and look for the 3rd party
+sign in link
 
-Note that data from your ORCID profile is _automagically_ harvested into this new account. Did some of the ORCID not appear? Why or why not?
+![3rd_party](img/3rd_party.png)
 
+Search for ORCID, and login. Sometimes you get redirected to the main NIH
+account page, SciENcv is in the bottom left. Click Create New Biosketch, give
+it a name, pick a format, and select ORCID as the data source.
+
+![source](img/source.png)
+
+You’ll be able to add works from your ORCID record to the Biosketch with just one click.
+
+![pick_ref](img/pick_ref.png)
 
 
 Previous: [Adding Works](01-adding-works.html)
