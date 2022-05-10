@@ -54,25 +54,50 @@ Advanced: Use the ORCID API to extract works from your profile
 </li>
 </ul>
 <p>
-There are lots of services that integrate with ORCID. Go to <a href="https://www.ncbi.nlm.nih.gov/sciencv/">scincv</a> and set up an account. Other integrations include <a href="https://profiles.impactstory.org/">impactstory</a> (also requires a Twitter account) and <a href="https://www.growkudos.com/">growKudos</a>
+There are lots of services that integrate with ORCID. Go to <a
+href="https://www.ncbi.nlm.nih.gov/sciencv/">scincv</a> and set up an
+account. Other integrations include <a
+href="https://profiles.impactstory.org/">impactstory</a> (also requires
+a Twitter account) and <a
+href="https://www.growkudos.com/">growKudos</a>
 </p>
 <h2 id="advanced-basic-intro-to-the-orcid-api">
 Advanced: Basic intro to the ORCID API
 </h2>
 <p>
-ORCID is an open resource, which means you have complete control of and access to your data. We’ve already seen how you can use the privacy controls to limit access to any part of your ORCID profile. For this example to work your profile will have to be public, because we’re going to access the information via the public API. An API is a way for computer systems to interact.
+ORCID is an open resource, which means you have complete control of and
+access to your data. We’ve already seen how you can use the privacy
+controls to limit access to any part of your ORCID profile. For this
+example to work your profile will have to be public, because we’re going
+to access the information via the public API. An API is a way for
+computer systems to interact.
 </p>
 <p>
-In this example we want to get a text version of all the works in our ORCID profile.
+In this example we want to get a text version of all the works in our
+ORCID profile.
 </p>
 <p>
-We’re going to use orcidtools, a package designed to make using the ORCID API easier. Download <a href="https://github.com/caltechlibrary/orcidtools/releases">orcidtools</a> for your operating system, unzip the download, and move the executible (under /bin) to a location on your PATH. If you don’t know your path, open a terminal window and type ‘echo <span class="math inline"><em>P</em><em>A</em><em>T</em><em>H</em>′.<em>Y</em><em>o</em><em>u</em><em>c</em><em>a</em><em>n</em><em>a</em><em>d</em><em>d</em><em>a</em><em>l</em><em>o</em><em>c</em><em>a</em><em>t</em><em>i</em><em>o</em><em>n</em><em>t</em><em>o</em><em>y</em><em>o</em><em>u</em><em>r</em><em>p</em><em>a</em><em>t</em><em>h</em>(<em>l</em><em>i</em><em>k</em><em>e</em><em>H</em><em>O</em><em>M</em><em>E</em>/<em>b</em><em>i</em><em>n</em>)<em>b</em><em>y</em><em>t</em><em>y</em><em>p</em><em>i</em><em>n</em><em>g</em>′<em>e</em><em>x</em><em>p</em><em>o</em><em>r</em><em>t</em><em>P</em><em>A</em><em>T</em><em>H</em>=</span>HOME/bin:$PATH’.
+We’re going to use orcidtools, a package designed to make using the
+ORCID API easier. Download <a
+href="https://github.com/caltechlibrary/orcidtools/releases">orcidtools</a>
+for your operating system, unzip the download, and move the executible
+(under /bin) to a location on your PATH. If you don’t know your path,
+open a terminal window and type ‘echo <span
+class="math inline"><em>P</em><em>A</em><em>T</em><em>H</em>′.<em>Y</em><em>o</em><em>u</em><em>c</em><em>a</em><em>n</em><em>a</em><em>d</em><em>d</em><em>a</em><em>l</em><em>o</em><em>c</em><em>a</em><em>t</em><em>i</em><em>o</em><em>n</em><em>t</em><em>o</em><em>y</em><em>o</em><em>u</em><em>r</em><em>p</em><em>a</em><em>t</em><em>h</em>(<em>l</em><em>i</em><em>k</em><em>e</em><em>H</em><em>O</em><em>M</em><em>E</em>/<em>b</em><em>i</em><em>n</em>)<em>b</em><em>y</em><em>t</em><em>y</em><em>p</em><em>i</em><em>n</em><em>g</em>′<em>e</em><em>x</em><em>p</em><em>o</em><em>r</em><em>t</em><em>P</em><em>A</em><em>T</em><em>H</em>=</span>HOME/bin:$PATH’.
 </p>
 <p>
-Now, we have to get API access. Go to <a href="https://orcid.org/developer-tools">developer tools</a> and click on “Register for the free ORCID public API”. You’ll have to agree to the terms of service. The API can do much more than we’re going to use today. To get access, we have to make up an application. You can enter things like “Test” in all the fields. Click the “Google Auth” line with the plus sign, and then click the save button (the black circle). Click the “Show details” button to see our identifying information.
+Now, we have to get API access. Go to <a
+href="https://orcid.org/developer-tools">developer tools</a> and click
+on “Register for the free ORCID public API”. You’ll have to agree to the
+terms of service. The API can do much more than we’re going to use
+today. To get access, we have to make up an application. You can enter
+things like “Test” in all the fields. Click the “Google Auth” line with
+the plus sign, and then click the save button (the black circle). Click
+the “Show details” button to see our identifying information.
 </p>
 <p>
-Now open up a terminal window. We need to enter the information we just set by typing
+Now open up a terminal window. We need to enter the information we just
+set by typing
 </p>
 <pre><code>export ORCID_CLIENT_ID=&quot;PASTE_ID_HERE&quot;
 export ORCID_CLIENT_SECRET=&quot;PASTE_SECRET_HERE&quot;
@@ -95,20 +120,28 @@ orcid -search &#39;email:*caltech.edu&#39;
 
 </code></pre>
 <p>
-The full documentation for searching is available at <a href="https://members.orcid.org/api/tutorial/search-orcid-registry">https://members.orcid.org/api/tutorial/search-orcid-registry</a>
+The full documentation for searching is available at <a
+href="https://members.orcid.org/api/tutorial/search-orcid-registry">https://members.orcid.org/api/tutorial/search-orcid-registry</a>
 </p>
 <h3 id="exporting-data">
 Exporting Data
 </h3>
 <p>
-You can also use the API to get data from a specific profile. We want to get the works from our profile. Type (replacing the ORCID number)
+You can also use the API to get data from a specific profile. We want to
+get the works from our profile. Type (replacing the ORCID number)
 </p>
 <pre><code>orcid -works 0000-0001-9266-5146 &gt; tmorrell.json</code></pre>
 <p>
-This is all the information in your profile in a difficult to read format called json. We want to make this pretty. Open the file (tmorrell.json in the example) in atom and use PrettyJSON.
+This is all the information in your profile in a difficult to read
+format called json. We want to make this pretty. Open the file
+(tmorrell.json in the example) in atom and use PrettyJSON.
 </p>
 <p>
-We can use <a href="https://github.com/caltechlibrary/mkpage">mkpage</a> and a [template] (https://github.com/caltechlibrary/orcidtools/blob/master/templates/orcid2txt.tmpl) to format the results as a text list of citations.
+We can use <a
+href="https://github.com/caltechlibrary/mkpage">mkpage</a> and a
+[template]
+(https://github.com/caltechlibrary/orcidtools/blob/master/templates/orcid2txt.tmpl)
+to format the results as a text list of citations.
 </p>
 <pre><code>mkpage &#39;data=tmorrell.json&#39; orcid2txt.tmpl</code></pre>
 <p>

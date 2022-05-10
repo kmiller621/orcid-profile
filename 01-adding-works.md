@@ -93,7 +93,7 @@ Confirm you wish to synch by clicking the orange 'Sync with ORCID' button.
 
 ### ORCID-CrossRef Synch Step 4.
 
-Return to your ORCID profile and click on 'Account Settings' at near the top of the screen. You will now see that have authorized CrossRef to update your ORCID profile as your new publications are released. You may revoke this permission anytime by clicking the delete button displayed on the right side of the CrossRef permission.
+Return to your ORCID profile and click on 'Trusted Parties' at near the top of the screen. You will now see that have authorized CrossRef to update your ORCID profile as your new publications are released. You may revoke this permission anytime by clicking the revoke access button displayed on the right side of the CrossRef permission.
 
 ![___Figure 3d. View permission in ORCID___](img/crossref-synch4_600.jpg)
 
@@ -104,40 +104,29 @@ Return to your ORCID profile and click on 'Account Settings' at near the top of 
 
 There is no universal coding format for scholarly citations: some systems use XML, others use JSON, and yet others use LaTeX and its bibliography syntax known as BibTeX. The ORCID system accepts BibTeX.
 
-To get the BibTeX citation depends on the platform that provides the citation. Many publisher sites offer the option of downloading the citation in BibTeX. For this exercise, we will capture the BibTeX 
-for one of Hugh Shanahan's conference abstracts and upload it to ORCID as a test.
+To get the BibTeX citation depends on the platform that provides the citation. Many publisher sites offer the option of downloading the citation in BibTeX. For this exercise, we will use the shen.bib BibTeX file we created in the [Digital Object Identifiers](00-intro-dois.html) lesson. 
 
-### BibTeX Step 1.
-
-Point your web browser to [Hugh's publications page](http://www.shanahanlab.org/?COLLCC=1022692939&) at http://www.shanahanlab.org/?COLLCC=1022692939&. Under '2019', click on his submitted paper '9 Simple recommendations for teaching data skills'. This sounds like a very interesting paper, right?!
-
-### BibTeX Step 2. 
-
-Click on the Tab 'Cite this' and scroll down the page until you see the option for 'BibTeX. Starting with the `@` at the beginning of the code and continuing down to the ending `}`, copy all of this code. Make sure to catch to `@` and the `}` on either end.
-
-### BibTeX Step 3. 
-
-Open a plain text file in Notepad, Wordpad, or another editor of your chouce and paste in the BibTeX code. Make sure there is no space or character before the leading `@` and the after the ending `}`. Save the plain text file as 'Hugh.bib'
-
-### BibTeX Step 4. 
+### Step 1. 
 
 Back in your ORCID profile in the 'Works' section, click on 'Add works' select the option to upload a BibTeX file, as shown below.
 
 ![___Figure 4a. Add BibTeX___](img/orcid11-bibtex.jpg)
 
-An upload prompt will display, so browse to your desktop and select the file 'Hugh.bib'
+### Step 2. 
+
+An upload prompt will display, click the button to browse to your desktop and select the file 'shen.bib'
 
 ![___Figure 4b. Select BibTeX file___](img/orcid15_700.png)
 
-Save the uploaded file by clicking on the little green icon that looks like either an old-fashioned computer disk or a hotel bed.
+Check the box of the record you want to add (there is only one record in the shen.bib file) and click the blue button to add the work to your ORCID profile.
 
 ![___Figure 4c. Review BibTeX___](img/orcid16_500.png)
 
-Hugh's abstract is now added to your ORCID profile as a test!
+The work is now added to your ORCID profile as a test!
 
 ## Exercise 5 (Mandatory!)
 
-Delete any works you added from Hugh's publication list because they were just for testing, and we understand the importance of giving credit where due! 
+Delete any works you added that aren't yours because they were just for testing, and we understand the importance of giving credit where due! 
 
 
 ---
